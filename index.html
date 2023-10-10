@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fixper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <header>
@@ -14,17 +16,17 @@
                 <div class="header-blockone">
                     <img src="./icons/logo.svg" alt="logo.svg">
                     <div class="header-link">
-                        <a class="header-link-text">Диагностика</a>
-                        <a class="header-link-text">Стоимость</a>
-                        <a class="header-link-text">Мастера</a>
-                        <a class="header-link-text">Отзывы</a>
-                        <a class="header-link-text">Вопросы</a>
+                        <a href="#" class="header-link-text">Диагностика</a>
+                        <a href="#" class="header-link-text">Стоимость</a>
+                        <a href="#" class="header-link-text">Мастера</a>
+                        <a href="#" class="header-link-text">Отзывы</a>
+                        <a href="#" class="header-link-text">Вопросы</a>
                     </div>
                 </div>
                 <div class="header-blocktwo">
                     <div class="header-city">
                         <img src="./icons/geo.svg" alt="geo.svg">
-                        <p class="header-link-text">Москва</p>
+                        <a href="#" class="header-link-text">Москва</a>
                     </div>
                     <button class="header-btn">Позвонить</button>
                 </div>
@@ -57,14 +59,623 @@
         </div>
     </header>
     <main class="main-page">
-        <section>
+        <section class="advantages">
             <div class="width-page">
                 <div class="container">
-                    <!--Содержимое блока-->
+                    <div class="advantages-block">
+                        <div class="advantages-block-item">
+                            <img id="img-one" src="./img/instruments.png" alt="instruments">
+                            <p class="advantages-block-item-text">Фирменные запчасти у мастеров в наличии</p>
+                        </div>
+                        <div class="advantages-block-item">
+                            <img id="img-two" src="./img/time.png" alt="time">
+                            <p class="advantages-block-item-text">Большинство ремонтов делаем за час на дому</p>
+                        </div>
+                        <div class="advantages-block-item">
+                            <img id="img-three" src="./img/documents.png" alt="documents">
+                            <p class="advantages-block-item-text">Профессиональный инструмент под любую задачу</p>
+                        </div>
+                        <div class="advantages-block-item">
+                            <img id="img-four" src="./img/person.png" alt="person">
+                            <p class="advantages-block-item-text">Квалифицированные и опытные мастера</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="problems">
+            <div class="width-page">
+                <div class="container">
+                    <div class="problems-block">
+                        <div class="problems-left">
+                            <p class="problems-left-name">Онлайн-диагностика</p>
+                            <h2 class="problems-left-text">Какая у вас проблема?</h2>
+                            <div class="problems-left-block">
+                                <button class="problems-left-block-link">Не включается</button>
+                                <button class="problems-left-block-link">Не выключается</button>
+                                <button class="problems-left-block-link">Не нагревает воду</button>
+                                <button class="problems-left-block-link">Все работет, но мне скучно и я хочу пообщаться с мастером</button>
+                                <button class="problems-left-block-link">Не крутится барабан</button>
+                                <button class="problems-left-block-link">Не работает кнопка включения</button>
+                                <button class="problems-left-block-link">Не выключается</button>
+                                <button class="problems-left-block-link">Иная проблема</button>
+                                <button class="problems-left-block-link">Не крутится барабан</button>
+                                <button class="problems-left-block-link">Не крутится барабан</button>
+                                <button class="problems-left-block-link">Не работает кнопка включения</button>
+                            </div>
+                            <div class="problems-left-stop">
+                                <img src="./icons/stop.svg" alt="stop">
+                                <p class="problems-left-stop-text">Выберите проблему и узнайте её решение</p>
+                            </div>
+                        </div>
+                        <div class="problems-right">
+                            <img src="./img/stiralca.png" alt="stiralca">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="width-page">
+                <div class="container">
+                    <h2 class="price-text">Стоимость услуг</h2>
+                    <div class="price-block">
+                        <div class="price-block-info">
+                            <a href="#" class="price-block-info-text">Услуга</a>
+                            <div class="price-block-info-right">
+                                <a href="#" class="price-block-info-text">Стоимость запчасти</a>
+                                <a href="#" class="price-block-info-text">Стоимость работ</a>
+                            </div>
+                        </div>
+                        <div class="price-block-line"></div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block-info">
+                            <a href="#" class="price-block-info-text">Выезд мастера</a>
+                            <div class="price-block-info-right">
+                                <a href="#" class="price-block-info-text" id="pbit">Бесплатно</a>
+                            </div>
+                        </div>
+                        <div class="price-block-line"></div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block-info">
+                            <a href="#" class="price-block-info-text">Диагностика стиральной машины</a>
+                            <div class="price-block-info-right">
+                                <div class="price-block-info-right">
+                                    <a href="#" class="price-block-info-text" id="pbit">Бесплатно</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-block-line"></div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block-info">
+                            <a href="#" class="price-block-info-text">Замена блока питания</a>
+                            <div class="price-block-info-right">
+                                <div class="price-block-info-right" id="rightm">
+                                    <div class="price-block-info-r">
+                                        <a href="#" class="price-block-info-text" id="pt">от</a>
+                                        <a href="#" class="price-block-info-text" id="price">750₽</a>
+                                    </div>
+                                    <div class="price-block-info-r">
+                                        <a href="#" class="price-block-info-text" id="price">900₽</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-block-line"></div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block-info">
+                            <a href="#" class="price-block-info-text">Замена помпы</a>
+                            <div class="price-block-info-right">
+                                <div class="price-block-info-right" id="righti">
+                                    <div class="price-block-info-r">
+                                        <a href="#" class="price-block-info-text" id="pt">от</a>
+                                        <a href="#" class="price-block-info-text" id="price">8880₽</a>
+                                    </div>
+                                    <div class="price-block-info-r">
+                                        <a href="#" class="price-block-info-text" id="price">1900₽</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-block-line"></div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block-info">
+                            <a href="#" class="price-block-info-text">Замена подшипников</a>
+                            <div class="price-block-info-right">
+                                <div class="price-block-info-right" id="rightm">
+                                    <div class="price-block-info-r">
+                                        <a href="#" class="price-block-info-text" id="pt">от</a>
+                                        <a href="#" class="price-block-info-text" id="price">1450₽</a>
+                                    </div>
+                                    <div class="price-block-info-r">
+                                        <a href="#" class="price-block-info-text" id="price">750₽</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-block-line"></div>
+                    </div>
+                    <div class="price-block-dop">
+                        <div class="price-block">
+                            <div class="price-block-info">
+                                <a href="#" class="price-block-info-text">Не вращается барабан</a>
+                                <div class="price-block-info-right">
+                                    <div class="price-block-info-right" id="rightm">
+                                        <div class="price-block-info-r">
+                                            <a href="#" class="price-block-info-text" id="pt">от</a>
+                                            <a href="#" class="price-block-info-text" id="price">1750₽</a>
+                                        </div>
+                                        <div class="price-block-info-r">
+                                            <a href="#" class="price-block-info-text" id="price">500₽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-block-line"></div>
+                        </div>
+                        <div class="price-block">
+                            <div class="price-block-info">
+                                <a href="#" class="price-block-info-text">Замена манжета люка</a>
+                                <div class="price-block-info-right">
+                                    <div class="price-block-info-right" id="rightm">
+                                        <div class="price-block-info-r">
+                                            <a href="#" class="price-block-info-text" id="pt">от</a>
+                                            <a href="#" class="price-block-info-text" id="price">1000₽</a>
+                                        </div>
+                                        <div class="price-block-info-r">
+                                            <a href="#" class="price-block-info-text" id="price">700₽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-block-line"></div>
+                        </div>
+                        <div class="price-block">
+                            <div class="price-block-info">
+                                <a href="#" class="price-block-info-text">Замена ТЭНа</a>
+                                <div class="price-block-info-right">
+                                    <div class="price-block-info-right" id="rightm">
+                                        <div class="price-block-info-r">
+                                            <a href="#" class="price-block-info-text" id="pt">от</a>
+                                            <a href="#" class="price-block-info-text" id="price">2000₽</a>
+                                        </div>
+                                        <div class="price-block-info-r">
+                                            <a href="#" class="price-block-info-text" id="price">400₽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-block-line"></div>
+                        </div>
+                    </div>
+                    <button class="price-btn">Показать все цены<img src="./icons/slow.svg" alt="slow"></button>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="width-page">
+                <div class="container">
+                    <div class="slider-block">
+                        <p class="slider-num">В нашем штате 12 сотрудников</p>
+                        <h2 class="slider-h">Мы большая команда профессионалов</h2>
+                    </div>
+                    <div class="image-slider swiper-container">
+                        <div class="image-slider-wrapper swiper-wrapper">
+                            <div class="image-slider-slide swiper-slide">
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo1.png" alt="photo1">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Александр Федулов</h3>
+                                            <p class="block-content-work">Работник</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">38 ремонтных работ</li>
+                                                <li class="block-content-li">1 год в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo2.png" alt="photo2">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Цветков Фёдор</h3>
+                                            <p class="block-content-work">Работник</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">76 ремонтных работ</li>
+                                                <li class="block-content-li">2 года в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,7</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo3.png" alt="photo3">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Малышев Иван</h3>
+                                            <p class="block-content-work">Инженер-механик</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">60 ремонтных работ</li>
+                                                <li class="block-content-li">3 года в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,6</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-slider-slide swiper-slide">
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo4.png" alt="photo4">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Свиридов Давид</h3>
+                                            <p class="block-content-work">Слесарь</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">104 ремонтных работ</li>
+                                                <li class="block-content-li">4 года в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,9</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo5.png" alt="photo5">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Зубов Матвей</h3>
+                                            <p class="block-content-work">Работник</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">16 ремонтных работ</li>
+                                                <li class="block-content-li">1 год в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo6.png" alt="photo6">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Фомин Леонид</h3>
+                                            <p class="block-content-work">Старший-механик</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">135 ремонтных работ</li>
+                                                <li class="block-content-li">3 года в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,6</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-slider-slide swiper-slide">
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo7.png" alt="photo7">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Константинов Егор</h3>
+                                            <p class="block-content-work">Инжинер</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">54 ремонтных работ</li>
+                                                <li class="block-content-li">2 года в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo8.png" alt="photo8">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Алексеев Михаил</h3>
+                                            <p class="block-content-work">Работник</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">126 ремонтных работ</li>
+                                                <li class="block-content-li">3 года в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo9.png" alt="photo9">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Кузнецов Демид</h3>
+                                            <p class="block-content-work">Младший-механик</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">14 ремонтных работ</li>
+                                                <li class="block-content-li">1 год в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,2</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-slider-slide swiper-slide">
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo10.png" alt="photo10">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Зуев Лев</h3>
+                                            <p class="block-content-work">Инжинер-техник</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">34 ремонтных работ</li>
+                                                <li class="block-content-li">1,5 года в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,8</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo11.png" alt="photo11">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Сорокин Филипп</h3>
+                                            <p class="block-content-work">Работник</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">26 ремонтных работ</li>
+                                                <li class="block-content-li">1 год в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,2</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide-block">
+                                    <div class="block-content">
+                                        <img class="block-content-img" src="./img/peoples/photo12.png" alt="photo12">
+                                        <div class="block-content-t">
+                                            <h3 class="block-content-name">Еремин Николай</h3>
+                                            <p class="block-content-work">Младший-механик</p>
+                                            <ul class="block-content-ul">
+                                                <li class="block-content-li">17 ремонтных работ</li>
+                                                <li class="block-content-li">1 год в Fixper</li>
+                                                <li class="block-content-li">Рейтинг Fixper 4,3</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="width-page">
+                <div class="container">
+                    <h2 class="reviews__text">Нас высоко оценивают</h2>
+                    <div class="reviews-slider swiper-container">
+                        <div class="reviews-slider-wrapper swiper-wrapper">
+                            <div class="reviews-slider-slide swiper-slide">
+                                <div class="swiper-reviews-block">
+                                    <div class="reviews-content">
+                                        <div class="reviews-content-block">
+                                            <img src="./img/avatar/avatar1.svg" alt="avatar">
+                                            <div class="reviews-content-block-t">
+                                                <h3 class="reviews-content-block-name">Владимир Завертайлов</h3>
+                                                <p class="reviews-content-block-date">16 марта 2023</p>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-content-p">Очень понравилось, как работают сотрудники в Fixper. Опишу     подробнее.
+                                            Сломалась стиральная маинка, ну, понятно сам не полезешь - польское чудо техники. Не включается, на крутилки никак не реагирует. На следующее утро позвонил в Fixper, оставил заявку. Через 15 минут мне перезвонил мастер, договорились о времени визита.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-reviews-block">
+                                    <div class="reviews-content">
+                                        <div class="reviews-content-block">
+                                            <img src="./img/avatar/avatar2.svg" alt="avatar">
+                                            <div class="reviews-content-block-t">
+                                                <h3 class="reviews-content-block-name">Диана Самосвалова</h3>
+                                                <p class="reviews-content-block-date">20 июня 2023</p>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-content-p">Очень хороший сервис, честно неожидала , дозвонилась сразу , в назначенное время пришел мастер , все на дому хорошо и быстро сделал. Рекомендую</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider-slide swiper-slide">
+                                <div class="swiper-reviews-block">
+                                    <div class="reviews-content">
+                                        <div class="reviews-content-block">
+                                            <img src="./img/avatar/avatar3.svg" alt="avatar">
+                                            <div class="reviews-content-block-t">
+                                                <h3 class="reviews-content-block-name">Александра Ветрова</h3>
+                                                <p class="reviews-content-block-date">30 августа 2023</p>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-content-p">Ремонтировали стиральную машинку. Мастер выполнил работу качественно, аккуратно. Работой осталась довольна. Всем рекомендую воспользоваться услугами данной мастерской.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-reviews-block">
+                                    <div class="reviews-content">
+                                        <div class="reviews-content-block">
+                                            <img src="./img/avatar/avatar4.svg" alt="avatar">
+                                            <div class="reviews-content-block-t">
+                                                <h3 class="reviews-content-block-name">Светлана Алексеева</h3>
+                                                <p class="reviews-content-block-date">1 сентября 2023</p>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-content-p">Сломалась стиральная машинка
+                                            Мастер Александр приехал через пару часов, за минут 10 выявил причину. Озвучил стоимость ремонта и срок. Проверил работу стиральной машины. Очень приятный, вежливый мужчина. Рекомендую всем, кто столкнулся с неисправностью какой либо техники!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slider-slide swiper-slide">
+                                <div class="swiper-reviews-block">
+                                    <div class="reviews-content">
+                                        <div class="reviews-content-block">
+                                            <img src="./img/avatar/avatar5.svg" alt="avatar">
+                                            <div class="reviews-content-block-t">
+                                                <h3 class="reviews-content-block-name">Инна Ануфриенко</h3>
+                                                <p class="reviews-content-block-date">11 мая 2023</p>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-content-p">Стиральную машинку сделали в течении нескольких дней. Мастер   грамотный, аккуратный. Работу сделал качественно и быстро. Всем довольна.
+                                            Пару недель назад обращались по ремонту стиральной машинки для соседа, так же сделали быстро и качественно.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-reviews-block">
+                                    <div class="reviews-content">
+                                        <div class="reviews-content-block">
+                                            <img src="./img/avatar/avatar6.svg" alt="avatar">
+                                            <div class="reviews-content-block-t">
+                                                <h3 class="reviews-content-block-name">Игорь Фролов</h3>
+                                                <p class="reviews-content-block-date">3 июля 2023</p>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-content-p">Понадобились запчасти для ремонта стиральной машинки LG. Ответили быстро и вежливо, предложили скинуть фото, что бы убедиться именно эта ли деталь мне нужна ( барышня все же звонит). Все оказалось в наличии, цена приемлемая, предложили доставку, но мы решили забрать сами, забронировали, на следующий день подъехали, все сравнили и приобрели, установили, все работает. Спасибо.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="social">
+            <div class="width-page">
+                <div class="container">
+                    <div class="social-block">
+                        <div class="social-block-content">
+                            <img src="./img/gogle.svg" alt="gogle">
+                        </div>
+                        <div class="social-block-content">
+                            <img src="./img/yandex.svg" alt="yandex">
+                        </div>
+                        <div class="social-block-content">
+                            <img src="./img/fix.svg" alt="fix">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="width-page">
+                <div class="container">
+                    <div class="faq-wrapper">
+                        <div class="faq-wrapper-t">
+                            <h3 class="faq-wrapper-t-text">Часто задаваемые вопросы</h3>
+                            <p class="faq-wrapper-t-title">Не нашли ответ на свой вопрос?<a href="#">Оставьте заявку</a>, и наш специалист свяжется  и ответит на ваш вопрос.</p>
+                        </div>
+                        <div class="faq-accordion">
+                            <div class="accordion"> 
+                                <div class="tab">
+                                    <input type="checkbox" id="tab1">
+                                    <label for="tab1" class="tab__title">Где почитать отзывы о вас?</label>
+                                    <p class="tab__content">Вы можете прочитать отзывы о нас на нашем официальном сайте или на различных платформах, таких как Google, Yelp, TripAdvisor и т. д. Также вы можете найти отзывы о нас на социальных медиа-платформах, таких как Facebook, Instagram и Twitter. Мы ценим каждый отзыв, который получаем, и стремимся предоставить нашим клиентам самый высокий уровень удовлетворенности. Будем рады, если вы оставите свой отзыв о нашей работе и поделитесь своим опытом с другими пользователями.</p>
+                                </div>
+                                <div class="tab">
+                                    <input type="checkbox" id="tab2">
+                                    <label for="tab2" class="tab__title">Сколько времени длится ремонт?</label>
+                                    <p class="tab__content">Время, которое требуется для ремонта стиральной машинки, зависит от нескольких факторов, таких как характер поломки, доступность запчастей и навыки исполнителя. Обычно ремонт стиральной машинки может занять от нескольких часов до нескольких дней. В некоторых случаях, когда сложный ремонт требует выявления и исправления нескольких проблем, время ремонта может затянуться до нескольких недель. Поэтому точное время ремонта лучше уточнить у специалиста, который будет выполнять работы.</p>
+                                </div>
+                                <div class="tab">
+                                    <input type="checkbox" id="tab3">
+                                    <label for="tab3" class="tab__title">Какие марки стиральных машин вы ремонтируете?</label>
+                                    <p class="tab__content">Мы ремонтируем стиральные машины различных марок, включая, но не ограничиваясь, такими как Samsung, LG, Bosch, Whirlpool, Electrolux, Miele, Siemens и др.с</p>
+                                </div>
+                                <div class="tab">
+                                    <input type="checkbox" id="tab4">
+                                    <label for="tab4" class="tab__title">Я живу в московской области, сможете приехать?</label>
+                                    <p class="tab__content">Конечно, мы можем приехать в московскую область. Укажите, пожалуйста, адрес и желаемую дату и время встречи менеджеру, чтобы мы могли организовать наше посещение.</p>
+                                </div>
+                                <div class="tab">
+                                    <input type="checkbox" id="tab5">
+                                    <label for="tab5" class="tab__title">Как производится контроль качества?</label>
+                                    <p class="tab__content">Контроль качества производится путем выполнения различных действий и проверок, которые направлены на обеспечение соответствия продукции или услуг определенным стандартам и требованиям. Этот процесс включает в себя сбор информации, анализ данных и принятие мер для исправления выявленных несоответствий.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="email">
+            <div class="width-page">
+                <div class="container">
+                    <div class="email-block">
+                        <div class="email-block-t">
+                            <h4 class="email-block-text">Вызов мастера</h4>
+                            <p class="email-block-title">Оставьте заявку сейчас и получите <span>скидку 15%</span></p>
+                        </div>
+                        <div class="email-block-content">
+                            <div class="email-block-number">
+                                <label><input type="text" size="40" placeholder="Номер телефона"></label>
+                            </div>
+                            <button class="email-block-btn">Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="width-page">
+                <div class="container">
+                    <div class="map-content">
+                        <div class="map-left">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac38e925f425efee1d1e6077ecad1dc097cefbd1a0123d4935165e4cec01260b1&amp;source=constructor" width="731" height="580" frameborder="0"></iframe>
+                        </div>
+                        <div class="map-right">
+                            <h3 class="map-right-name">Контактная информация</h3>
+                            <div class="map-right-cont">
+                                <p class="map-right-address">ул. Стрелковая, д. 14 (офис 1)</p>
+                                <p class="map-right-date">8:00—21:00 без выходных</p>
+                            </div>
+                            <div class="map-right-cont">
+                                <p class="map-right-address">ул. Карла Маркса, д. 33 (диспетчерская)</p>
+                                <p class="map-right-date">7:00—23:00 без выходных</p>
+                            </div>
+                            <a href="#" class="map-right-email">iavaisov@gmail.com</a>
+                            <button class="map-right-btn">Позвонить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="width-page">
+                <div class="container">
+                    <div class="footer-content">
+                        <img class="footer-content-img" src="./icons/logos.svg" alt="logos">
+                        <div class="footer-link">
+                            <a href="#">Диагностика</a>
+                            <a href="#">Стоимость</a>
+                            <a href="#">Мастера</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Вопросы</a>
+                            <a href="#">Карта сайта</a>
+                        </div>
+                        <div class="footer-pay">
+                            <p class="footer-pay-text">Способы оплаты:</p>
+                            <div class="footer-pay-link">
+                                <a href="#"><img src="./icons/pay/mip.svg" alt="mip"></a>
+                                <a href="#"><img src="./icons/pay/master-card.svg" alt="master-card"></a>
+                                <a href="#"><img src="./icons/pay/visa.svg" alt="visa"></a>
+                                <a href="#"><img src="./icons/pay/apple-pay.svg" alt="apple-pay"></a>
+                                <a href="#"><img src="./icons/pay/gogle-pay.svg" alt="gogle-pay"></a>
+                                <a href="#"><img src="./icons/pay/nal.svg" alt="nal"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-inn">
+                        <p class="footer-inn-text">Сервис ремонта бытовой и цифровой техники</p>
+                        <p class="footer-inn-text">ЧПТУП «МИКАИЛ» 192007601</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </html>
