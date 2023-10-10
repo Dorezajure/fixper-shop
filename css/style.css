@@ -10,11 +10,16 @@
 }
 
 :root {
-
+    --swiper-theme-color: #96317D;
 }
 
 body {
 	font-family: 'TT Norms', system-ui; 
+}
+
+.width-page {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 header {
@@ -66,6 +71,7 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 20px; /* 125% */
+    text-decoration: none;
 }
 
 .header-city {
@@ -85,6 +91,13 @@ header {
     
     border-radius: 15px;
     border: 2px solid #FFC464;
+
+    transition: 0.2s ease-out;
+}
+
+.header-btn:hover {
+    color: #FFFFFF;
+    background-color: #FFC464;
 }
 
 .header-content {
@@ -200,4 +213,785 @@ header {
 }
 
 
+/*Блок с преимуществами*/
+
+.advantages {
+    margin-bottom: 96px;
+}
+
+.advantages-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 166px 0 166px;
+}
+
+.advantages-block-item {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    gap: 30px;
+}
+
+.advantages-block-item-text {
+    max-width: 208px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%; /* 26px */
+}
+
+#img-one {
+    width: 111.983px;
+    height: 75px;
+}
+
+#img-two {
+    width: 105px;
+    height: 74px;
+}
+
+#img-three {
+    width: 72.826px;
+    height: 75px;
+}
+
+#img-four {
+    width: 90.52px;
+    height: 75px;
+}
+
+/*Блок с проблемами и их решением*/
+.problems {
+    background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+    margin-bottom: 100px;
+}
+
+.problems-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.problems-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 686px;
+    margin-left:  158px;
+}
+
+.problems-left-name {
+    color: #A95094;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 115px;
+}
+
+.problems-left-text {
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px; /* 88.889% */
+    letter-spacing: -0.675px;
+    padding-bottom: 50px;
+}
+
+.problems-left-block {
+    /* display: flex; */
+    padding-bottom: 30px;
+    margin-right: 51px;
+}
+
+.problems-left-block-link {
+    width: fit-content;
+    color: #96317D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 15px 28px 15px 28px;
+    border: solid 1px #96317D;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s ease-out;
+}
+
+.problems-left-block-link:hover {
+    background: #96317D;
+    color: #fff;
+}
+
+.problems-left-stop {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.problems-left-stop-text {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+
+/* Блок стоимость услуг */
+.price {
+    margin-bottom: 100px;
+}
+
+.price-text {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px; /* 88.889% */
+    letter-spacing: -0.675px;
+    padding-bottom: 50px;
+}
+
+.price-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 971px;
+}
+
+.price-block-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.price-block-info-text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    text-decoration: none;
+}
+
+.price-block-info-right {
+    display: flex;
+    gap: 50px;
+}
+
+.price-block-line {
+    width: 971px;
+    height: 1px;
+    background: #ECECEC;
+    margin-bottom: 25px;
+}
+
+#pbit {
+    color: #96317D;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+#pt {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+}
+
+#price {
+    color: #000;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.price-block-info-r {
+    display: flex;
+    flex-direction: row;
+}
+
+#rightm {
+    gap: 128px;
+}
+
+#righti {
+    gap: 121px;
+}
+
+.price-btn {
+    padding-top: 50px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: #96317D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.price-block-dop {
+    display: none;
+    flex-direction: column;
+}
+
+/* Блок со слайдером */
+.slider {
+    margin-bottom: 100px;
+    background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+}
+
+.slider-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-num {
+    color: #96317D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+    padding-bottom: 10px;
+    padding-top: 100px;
+}
+
+.image-slider {
+    padding-bottom: 163px;
+    overflow: hidden;
+}
+
+.slider-h {
+    color: #000;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 88.889% */
+    letter-spacing: -0.675px;
+    padding-bottom: 50px;
+}
+
+.swiper-container {
+    margin-bottom: 40px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.swiper-slide-block {
+    height: 647px;
+    background: #FFFFFF;
+    width: 370px;
+    border-radius: 20px;
+}
+
+.swiper-pagination {
+    position: relative;
+    padding-top: 40px;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+}
+
+.block-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-content-img {
+    padding-bottom: 50px;
+}
+
+.block-content-t {
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+}
+
+.block-content-name {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.block-content-work {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.block-content-ul {
+    padding-left: 18px;
+    list-style-image: url("./../icons/tick.svg");
+}
+
+.block-content-li {
+    color: #96317D;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.block-content-li:last-child {
+    padding-bottom: 0px;
+}
+
+/* Блок с отзывами */
+
+.reviews__text {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%; /* 52px */
+    letter-spacing: -0.6px;
+    padding-bottom: 50px;
+}
+
+.swiper-reviews-block {
+    width: 570px;
+    height: 417px;
+    background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+}
+
+.reviews-slider {
+    padding-bottom: 95px;
+    overflow: hidden;
+}
+
+.reviews-content-block {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 63px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+}
+
+.reviews-content-block-t {
+    display: flex;
+    flex-direction: column;
+}    
+
+.reviews-content-block-name {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.reviews-content-block-date {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.reviews-content-p {
+    display: flex;
+    padding-left: 50px;
+    max-width: 522px;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+/* Блок с соц.отзывами */
+.social {
+    background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+    margin-bottom: 100px;
+}
+
+.social-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0 50px 0;
+}
+
+.social-block-content {
+    width: 370px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+/*Блок FAQ*/
+.faq {
+    margin-bottom: 100px;
+} 
+
+.faq-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 135px;
+    padding-right: 148px;
+}
+
+.faq-wrapper-t {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-wrapper-t-text {
+    max-width: 329px;
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
+    padding-bottom: 25px;
+}
+
+.faq-wrapper-t-title {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.9px;
+    max-width: 301px;
+}
+
+.faq-wrapper-t-title a {
+    color: #A95094;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.9px;
+    text-decoration: underline;
+}
+
+.accordion {
+    min-width: 722px;
+}
+
+.tab input,
+.tab__content {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    display: none;
+    max-width: 680px;
+    padding-bottom: 30px;
+    
+    transition: 0.2s ease-out;
+}
+
+.tab {
+    border-radius: 5px;
+    background: #FAFAFA;
+    backdrop-filter: blur(5px);
+    min-height: 74px;
+    margin-bottom: 20px;
+    transition: 0.2s ease-out;
+}
+
+.tab__title { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0px 17px 35px;
+    margin-bottom: 10px;
+
+    color: #212121;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    transition: 0.2s ease-out;
+}
+
+.tab__title::after {
+    padding-right: 30px;
+    transition: 0.2s ease-out;
+    content: url("../img/plus.svg");
+}
+
+.tab__content {
+    padding-left: 35px;
+}
+
+.tab :checked + .tab__title {
+    background: #FAFAFA;
+}
+
+.tab :checked + .tab__title::after {
+    content: url("../img/minus.svg");
+}
+
+.tab :checked ~ .tab__content {
+    display: block;
+}
+
+/*email*/
+.email {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 381px;
+    background-image: url(./../img/phone.png);
+    margin-bottom: 100px;
+    padding: 100px 51px 100px 48px;
+}
+
+.email-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1341px;
+    min-height: 181px;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.email-block-t {
+    padding-right: 60px;
+}
+
+.email-block-text {
+    color: #171717;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    padding-bottom: 10px;
+}
+
+.email-block-title {
+    color: #171717;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.email-block-title span {
+    color: #A95094;
+}
+
+.email-block-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.email-block-number input {
+    color: #171717;
+    font-size: 16px;
+    font-weight: 500;
+
+    width: 326px;
+    height: 69px;
+    border-radius: 10px;
+    background: #F5F5F5;
+    padding: 25px 30px;
+}
+
+.email-block-btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    width: 314px;
+    height: 69px;
+    border-radius: 15px;
+    background: #A95094;
+}
+
+/* Блок с картой */
+
+.map {
+    margin-bottom: 100px;
+}
+
+.map-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 69px;
+}
+
+.map-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-right-name {
+    max-width: 386px;
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
+    letter-spacing: -0.6px;
+    padding-bottom: 50px;
+}
+
+.map-right-address {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    padding-bottom: 10px;
+}
+
+.map-right-date {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.map-right-cont {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+}
+
+.map-right-email {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    padding-bottom: 35px;
+    text-decoration: none;
+}
+
+.map-right-btn {
+    color: #993280;
+    font-size: 16px;
+    font-weight: 700;
+
+    width: 162px;
+    height: 55px;
+    border-radius: 15px;
+    border: 2px solid #993280;
+
+    transition: 0.2s ease-out;
+}
+
+.map-right-btn:hover {
+    color: #FFFFFF;
+    background-color: #993280;
+}
+
+.map-right-btn:hover {
+    background: #993280;
+    color: #fff;
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+
+/* Подвал */
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content-img {
+    width: 111.9px;
+    height: 33px;
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 29px;
+}
+
+.footer-link a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    text-decoration: none;
+    padding: 20px;
+}
+
+.footer-pay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1338px;
+    min-height: 120px;
+    background: #FAFAFA;
+    margin-bottom: 50px;
+    padding: 35px 265px;
+}
+
+.footer-pay-text {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    padding-right: 26px;
+}
+
+.footer-pay-link {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-inn {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-bottom: 30px;
+}
+
+.footer-inn-text {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
 
